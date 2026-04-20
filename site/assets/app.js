@@ -8,6 +8,14 @@ const CITY_CONFIG = [
     hourly: "https://www.wunderground.com/hourly/cn/chengdu/ZUUU",
     history: "https://www.wunderground.com/history/daily/cn/chengdu/ZUUU",
   },
+    {
+    id: "chongqing",
+    name: "Chongqing",
+    buttonMeta: "CN / ZUCK",
+    description: "中国重庆 · ZUCK",
+    hourly: "https://www.wunderground.com/hourly/cn/chongqing/ZUCK",
+    history: "https://www.wunderground.com/history/daily/cn/chongqing/ZUCK",
+  },
   {
     id: "tokyo",
     name: "Tokyo",
@@ -16,14 +24,7 @@ const CITY_CONFIG = [
     hourly: "https://www.wunderground.com/hourly/jp/tokyo/RJTT",
     history: "https://www.wunderground.com/history/daily/jp/tokyo/RJTT",
   },
-  {
-    id: "chongqing",
-    name: "Chongqing",
-    buttonMeta: "CN / ZUCK",
-    description: "中国重庆 · ZUCK",
-    hourly: "https://www.wunderground.com/hourly/cn/chongqing/ZUCK",
-    history: "https://www.wunderground.com/history/daily/cn/chongqing/ZUCK",
-  },
+
   {
     id: "wellington",
     name: "Wellington",
