@@ -16,6 +16,22 @@ const CITY_CONFIG = [
     hourly: "https://www.wunderground.com/hourly/jp/tokyo/RJTT",
     history: "https://www.wunderground.com/history/daily/jp/tokyo/RJTT",
   },
+  {
+    id: "chongqing",
+    name: "Chongqing",
+    buttonMeta: "CN / ZUCK",
+    description: "中国重庆 · ZUCK",
+    hourly: "https://www.wunderground.com/hourly/cn/chongqing/ZUCK",
+    history: "https://www.wunderground.com/history/daily/cn/chongqing/ZUCK",
+  },
+  {
+    id: "wellington",
+    name: "Wellington",
+    buttonMeta: "NZ / NZWN",
+    description: "新西兰惠灵顿 · NZWN",
+    hourly: "https://www.wunderground.com/hourly/nz/wellington/NZWN",
+    history: "https://www.wunderground.com/history/daily/nz/wellington/NZWN",
+  },
 ];
 
 const CITY_BY_ID = Object.fromEntries(
