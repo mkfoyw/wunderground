@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Underground Dashboard</title>
+    <meta
+      name="description"
+      content="在一个页面里快速切换并查看 Weather Underground 的 hourly 与 history daily 页面。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="top-section">
+        <section class="toolbar-card">
+          <nav id="city-list" class="city-list" aria-label="城市切换"></nav>
+
+          <div class="toolbar-actions">
+            <a
+              id="open-hourly-link"
+              class="action-link"
+              href="https://www.wunderground.com/hourly/cn/chengdu/ZUUU"
+              target="_blank"
+              rel="noreferrer"
+            >
+              打开 Hourly
+            </a>
+            <a
+              id="open-history-link"
+              class="action-link"
+              href="https://www.wunderground.com/history/daily/cn/chengdu/ZUUU"
+              target="_blank"
+              rel="noreferrer"
+            >
+              打开 History Daily
+            </a>
+            <button id="open-both-button" class="ghost-button" type="button">
+              同时打开两个页面
+            </button>
+          </div>
+        </section>
+      </header>
+
+      <main class="content">
+        <section class="frame-card">
+          <div class="card-header">
+            <div>
+              <p class="card-label">Panel A</p>
+              <h2>Hourly</h2>
+            </div>
+            <a
+              id="hourly-card-link"
+              class="inline-link"
+              href="https://www.wunderground.com/hourly/cn/chengdu/ZUUU"
+              target="_blank"
+              rel="noreferrer"
+            >
+              官方页面
+            </a>
+          </div>
+          <div class="frame-wrap">
+            <iframe
+              id="hourly-frame"
+              title="Weather Underground Hourly"
+              loading="lazy"
+              src="https://www.wunderground.com/hourly/cn/chengdu/ZUUU"
+            ></iframe>
+          </div>
+        </section>
+
+        <section class="frame-card">
+          <div class="card-header">
+            <div>
+              <p class="card-label">Panel B</p>
+              <h2>History Daily</h2>
+            </div>
+            <a
+              id="history-card-link"
+              class="inline-link"
+              href="https://www.wunderground.com/history/daily/cn/chengdu/ZUUU"
+              target="_blank"
+              rel="noreferrer"
+            >
+              官方页面
+            </a>
+          </div>
+          <div class="frame-wrap">
+            <iframe
+              id="history-frame"
+              title="Weather Underground History Daily"
+              loading="lazy"
+              src="https://www.wunderground.com/history/daily/cn/chengdu/ZUUU"
+            ></iframe>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
