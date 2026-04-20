@@ -5,31 +5,43 @@ const CITY_CONFIG = [
     name: "Chengdu",
     buttonMeta: "CN / ZUUU",
     description: "中国成都 · ZUUU",
+    overview: "https://www.wunderground.com/weather/cn/chengdu/ZUUU",
     hourly: "https://www.wunderground.com/hourly/cn/chengdu/ZUUU",
     history: "https://www.wunderground.com/history/daily/cn/chengdu/ZUUU",
   },
-    {
+  {
     id: "chongqing",
     name: "Chongqing",
     buttonMeta: "CN / ZUCK",
     description: "中国重庆 · ZUCK",
+    overview: "https://www.wunderground.com/weather/cn/chongqing/ZUCK",
     hourly: "https://www.wunderground.com/hourly/cn/chongqing/ZUCK",
     history: "https://www.wunderground.com/history/daily/cn/chongqing/ZUCK",
+  },
+  {
+    id: "shanghai",
+    name: "Shanghai",
+    buttonMeta: "CN / ZSPD",
+    description: "中国上海 · ZSPD",
+    overview: "https://www.wunderground.com/weather/cn/shanghai/ZSPD",
+    hourly: "https://www.wunderground.com/hourly/cn/shanghai/ZSPD",
+    history: "https://www.wunderground.com/history/daily/cn/shanghai/ZSPD",
   },
   {
     id: "tokyo",
     name: "Tokyo",
     buttonMeta: "JP / RJTT",
     description: "日本东京 · RJTT",
+    overview: "https://www.wunderground.com/weather/jp/tokyo/RJTT",
     hourly: "https://www.wunderground.com/hourly/jp/tokyo/RJTT",
     history: "https://www.wunderground.com/history/daily/jp/tokyo/RJTT",
   },
-
   {
     id: "wellington",
     name: "Wellington",
     buttonMeta: "NZ / NZWN",
     description: "新西兰惠灵顿 · NZWN",
+    overview: "https://www.wunderground.com/weather/nz/wellington/NZWN",
     hourly: "https://www.wunderground.com/hourly/nz/wellington/NZWN",
     history: "https://www.wunderground.com/history/daily/nz/wellington/NZWN",
   },
@@ -46,11 +58,10 @@ const CITY_ALIASES = {
 const cityList = document.querySelector("#city-list");
 const hourlyFrame = document.querySelector("#hourly-frame");
 const historyFrame = document.querySelector("#history-frame");
-const openHourlyLink = document.querySelector("#open-hourly-link");
-const openHistoryLink = document.querySelector("#open-history-link");
+const overviewFrame = document.querySelector("#overview-frame");
 const hourlyCardLink = document.querySelector("#hourly-card-link");
 const historyCardLink = document.querySelector("#history-card-link");
-const openBothButton = document.querySelector("#open-both-button");
+const overviewCardLink = document.querySelector("#overview-card-link");
 
 let cityButtons = [];
 let activeCityId = null;
@@ -82,11 +93,11 @@ function setCity(cityId) {
   }
 
   activeCityId = cityId;
+  overviewFrame.src = city.overview;
   hourlyFrame.src = city.hourly;
   historyFrame.src = city.history;
 
-  openHourlyLink.href = city.hourly;
-  openHistoryLink.href = city.history;
+  overviewCardLink.href = city.overview;
   hourlyCardLink.href = city.hourly;
   historyCardLink.href = city.history;
 
@@ -108,12 +119,6 @@ cityList.addEventListener("click", (event) => {
   }
 
   setCity(button.dataset.city);
-});
-
-openBothButton.addEventListener("click", () => {
-  const city = CITY_BY_ID[activeCityId ?? getInitialCity()];
-  window.open(city.hourly, "_blank", "noopener,noreferrer");
-  window.open(city.history, "_blank", "noopener,noreferrer");
 });
 
 renderCityButtons();

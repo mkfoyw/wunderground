@@ -15,38 +15,38 @@
       <header class="top-section">
         <section class="toolbar-card">
           <nav id="city-list" class="city-list" aria-label="城市切换"></nav>
-
-          <div class="toolbar-actions">
-            <a
-              id="open-hourly-link"
-              class="action-link"
-              href="https://www.wunderground.com/hourly/cn/chengdu/ZUUU"
-              target="_blank"
-              rel="noreferrer"
-            >
-              打开 Hourly
-            </a>
-            <a
-              id="open-history-link"
-              class="action-link"
-              href="https://www.wunderground.com/history/daily/cn/chengdu/ZUUU"
-              target="_blank"
-              rel="noreferrer"
-            >
-              打开 History Daily
-            </a>
-            <button id="open-both-button" class="ghost-button" type="button">
-              同时打开两个页面
-            </button>
-          </div>
         </section>
       </header>
 
       <main class="content">
+        <section class="frame-card frame-card-wide">
+          <div class="card-header">
+            <div>
+              <h2>Today</h2>
+            </div>
+            <a
+              id="overview-card-link"
+              class="inline-link"
+              href="https://www.wunderground.com/weather/cn/chengdu/ZUUU"
+              target="_blank"
+              rel="noreferrer"
+            >
+              官方页面
+            </a>
+          </div>
+          <div class="frame-wrap frame-wrap-overview">
+            <iframe
+              id="overview-frame"
+              title="Weather Underground Overview"
+              loading="lazy"
+              src="https://www.wunderground.com/weather/cn/chengdu/ZUUU"
+            ></iframe>
+          </div>
+        </section>
+
         <section class="frame-card">
           <div class="card-header">
             <div>
-              <p class="card-label">Panel A</p>
               <h2>Hourly</h2>
             </div>
             <a
@@ -72,7 +72,6 @@
         <section class="frame-card">
           <div class="card-header">
             <div>
-              <p class="card-label">Panel B</p>
               <h2>History Daily</h2>
             </div>
             <a
@@ -94,6 +93,7 @@
             ></iframe>
           </div>
         </section>
+
       </main>
     </div>
 

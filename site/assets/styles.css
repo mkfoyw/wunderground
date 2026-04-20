@@ -57,14 +57,6 @@ a {
   box-shadow: var(--shadow);
 }
 
-.card-label {
-  margin: 0 0 10px;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-deep);
-}
-
 .frame-card h2 {
   margin: 0;
 }
@@ -127,14 +119,6 @@ a {
   font-size: 0.88rem;
 }
 
-.toolbar-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.action-link,
-.ghost-button,
 .inline-link {
   display: inline-flex;
   align-items: center;
@@ -145,12 +129,6 @@ a {
   text-decoration: none;
 }
 
-.action-link {
-  background: var(--accent);
-  color: #fffefb;
-}
-
-.ghost-button,
 .inline-link {
   border: 1px solid rgba(36, 48, 73, 0.15);
   background: rgba(255, 255, 255, 0.72);
@@ -170,6 +148,10 @@ a {
   gap: 18px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.72);
+}
+
+.frame-card-wide {
+  grid-column: 1 / -1;
 }
 
 .card-header {
@@ -196,6 +178,11 @@ iframe {
   background: transparent;
 }
 
+.frame-wrap-overview,
+.frame-wrap-overview iframe {
+  min-height: 86vh;
+}
+
 @media (max-width: 1180px) {
   .content {
     grid-template-columns: 1fr;
@@ -204,6 +191,11 @@ iframe {
   .frame-wrap,
   iframe {
     min-height: 60vh;
+  }
+
+  .frame-wrap-overview,
+  .frame-wrap-overview iframe {
+    min-height: 70vh;
   }
 }
 
@@ -229,5 +221,10 @@ iframe {
   .frame-wrap,
   iframe {
     min-height: 52vh;
+  }
+
+  .frame-wrap-overview,
+  .frame-wrap-overview iframe {
+    min-height: 62vh;
   }
 }
