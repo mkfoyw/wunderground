@@ -45,6 +45,155 @@ const CITY_CONFIG = [
     hourly: "https://www.wunderground.com/hourly/nz/wellington/NZWN",
     history: "https://www.wunderground.com/history/daily/nz/wellington/NZWN",
   },
+  {
+    id: "incheon",
+    name: "Incheon",
+    buttonMeta: "KR / RKSI",
+    description: "韩国仁川 · RKSI",
+    overview: "https://www.wunderground.com/weather/kr/incheon/RKSI",
+    hourly: "https://www.wunderground.com/hourly/kr/incheon/RKSI",
+    history: "https://www.wunderground.com/history/daily/kr/incheon/RKSI",
+  }
+  ,
+  {
+    id: "london",
+    name: "London",
+    buttonMeta: "GB / EGLC",
+    description: "英国伦敦 · EGLC",
+    overview: "https://www.wunderground.com/weather/gb/london/EGLC",
+    hourly: "https://www.wunderground.com/hourly/gb/london/EGLC",
+    history: "https://www.wunderground.com/history/daily/gb/london/EGLC",
+  }
+  ,
+  {
+    id: "singapore",
+    name: "Singapore",
+    buttonMeta: "SG / WSSS",
+    description: "新加坡 · WSSS",
+    overview: "https://www.wunderground.com/weather/sg/singapore/WSSS",
+    hourly: "https://www.wunderground.com/hourly/sg/singapore/WSSS",
+    history: "https://www.wunderground.com/history/daily/sg/singapore/WSSS",
+  }
+  ,
+  {
+    id: "munich",
+    name: "Munich",
+    buttonMeta: "DE / EDDM",
+    description: "德国慕尼黑 · EDDM",
+    overview: "https://www.wunderground.com/weather/de/munich/EDDM",
+    hourly: "https://www.wunderground.com/hourly/de/munich/EDDM",
+    history: "https://www.wunderground.com/history/daily/de/munich/EDDM",
+  }
+  ,
+  {
+    id: "miami",
+    name: "Miami",
+    buttonMeta: "US / KMIA",
+    description: "美国迈阿密 · KMIA",
+   overview: "https://www.wunderground.com/weather/us/fl/miami/KMIA",
+    hourly: "https://www.wunderground.com/hourly/us/fl/miami/KMIA",
+    history: "https://www.wunderground.com/history/daily/us/fl/miami/KMIA",
+  }
+  ,
+  {
+    id: "milan",
+    name: "Milan",
+    buttonMeta: "IT / LIMC",
+    description: "意大利米兰 · LIMC",
+    overview: "https://www.wunderground.com/weather/it/milan/LIMC",
+    hourly: "https://www.wunderground.com/hourly/it/milan/LIMC",
+    history: "https://www.wunderground.com/history/daily/it/milan/LIMC",
+  }
+  ,
+  {
+    id: "paris",
+    name: "Paris",
+    buttonMeta: "FR / LFPB",
+    description: "法国博讷伊-昂-法兰西 · LFPB",
+    overview: "https://www.wunderground.com/weather/fr/bonneuil-en-france/LFPB",
+    hourly: "https://www.wunderground.com/hourly/fr/bonneuil-en-france/LFPB",
+    history: "https://www.wunderground.com/history/daily/fr/bonneuil-en-france/LFPB",
+  }
+  ,
+  {
+    id: "beijing",
+    name: "Beijing",
+    buttonMeta: "CN / ZBAA",
+    description: "中国北京 · ZBAA",
+    overview: "https://www.wunderground.com/weather/cn/beijing/ZBAA",
+    hourly: "https://www.wunderground.com/hourly/cn/beijing/ZBAA",
+    history: "https://www.wunderground.com/history/daily/cn/beijing/ZBAA",
+  }
+  ,
+  {
+    id: "helsinki",
+    name: "Helsinki",
+    buttonMeta: "FI / EFHK",
+    description: "芬兰万塔 · EFHK",
+    overview: "https://www.wunderground.com/weather/fi/vantaa/EFHK",
+    hourly: "https://www.wunderground.com/hourly/fi/vantaa/EFHK",
+    history: "https://www.wunderground.com/history/daily/fi/vantaa/EFHK",
+  }
+  ,
+  {
+    id: "madrid",
+    name: "Madrid",
+    buttonMeta: "ES / LEMD",
+    description: "西班牙马德里 · LEMD",
+    overview: "https://www.wunderground.com/weather/es/madrid/LEMD",
+    hourly: "https://www.wunderground.com/hourly/es/madrid/LEMD",
+    history: "https://www.wunderground.com/history/daily/es/madrid/LEMD",
+  }
+  ,
+  {
+    id: "taipei",
+    name: "Taipei",
+    buttonMeta: "TW / RCSS",
+    description: "台灣台北 · RCSS",
+    overview: "https://www.wunderground.com/weather/tw/taipei/RCSS",
+    hourly: "https://www.wunderground.com/hourly/tw/taipei/RCSS",
+    history: "https://www.wunderground.com/history/daily/tw/taipei/RCSS",
+  }
+  ,
+  {
+    id: "shenzhen",
+    name: "Shenzhen",
+    buttonMeta: "CN / ZGSZ",
+    description: "中国深圳 · ZGSZ",
+    overview: "https://www.wunderground.com/weather/cn/shenzhen/ZGSZ",
+    hourly: "https://www.wunderground.com/hourly/cn/shenzhen/ZGSZ",
+    history: "https://www.wunderground.com/history/daily/cn/shenzhen/ZGSZ",
+  }
+  ,
+  {
+    id: "lagos",
+    name: "Lagos",
+    buttonMeta: "NG / DNMM",
+    description: "尼日利亚拉各斯 · DNMM",
+    overview: "https://www.wunderground.com/weather/ng/lagos/DNMM",
+    hourly: "https://www.wunderground.com/hourly/ng/lagos/DNMM",
+    history: "https://www.wunderground.com/history/daily/ng/lagos/DNMM",
+  }
+  ,
+  {
+    id: "cubuk",
+    name: "Çubuk",
+    buttonMeta: "TR / LTAC",
+    description: "土耳其丘布克 · LTAC",
+    overview: "https://www.wunderground.com/weather/tr/%C3%A7ubuk/LTAC",
+    hourly: "https://www.wunderground.com/hourly/tr/%C3%A7ubuk/LTAC",
+    history: "https://www.wunderground.com/history/daily/tr/%C3%A7ubuk/LTAC",
+  }
+  ,
+  {
+    id: "wuhan",
+    name: "Wuhan",
+    buttonMeta: "CN / ZHHH",
+    description: "中国武汉 · ZHHH",
+    overview: "https://www.wunderground.com/weather/cn/wuhan/ZHHH",
+    hourly: "https://www.wunderground.com/hourly/cn/wuhan/ZHHH",
+    history: "https://www.wunderground.com/history/daily/cn/wuhan/ZHHH",
+  }
 ];
 
 const CITY_BY_ID = Object.fromEntries(
