@@ -46,10 +46,10 @@ const CITY_CONFIG = [
     history: "https://www.wunderground.com/history/daily/nz/wellington/NZWN",
   },
   {
-    id: "incheon",
-    name: "Incheon",
+    id: "seoul",
+    name: "Seoul",
     buttonMeta: "KR / RKSI",
-    description: "韩国仁川 · RKSI",
+    description: "韩国首尔 · RKSI",
     overview: "https://www.wunderground.com/weather/kr/incheon/RKSI",
     hourly: "https://www.wunderground.com/hourly/kr/incheon/RKSI",
     history: "https://www.wunderground.com/history/daily/kr/incheon/RKSI",
