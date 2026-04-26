@@ -161,7 +161,7 @@ const CITY_CONFIG = [
     buttonMeta: "CN / ZGSZ",
     description: "中国深圳 · ZGSZ",
     overview: "https://www.wunderground.com/weather/cn/shenzhen/ZGSZ",
-    hourly: "https://www.wunderly.com/hourly/cn/shenzhen/ZGSZ",
+    hourly: "https://www.wunderground.com/hourly/cn/shenzhen/ZGSZ",
     history: "https://www.wunderground.com/history/daily/cn/shenzhen/ZGSZ",
   }
   ,
