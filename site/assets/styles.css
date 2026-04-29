@@ -138,7 +138,7 @@ a {
 
 .content {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -150,8 +150,12 @@ a {
   background: rgba(255, 255, 255, 0.72);
 }
 
-.frame-card-wide {
-  grid-column: 1 / -1;
+.frame-card-main {
+  grid-column: span 3;
+}
+
+.frame-card-history {
+  grid-column: span 2;
 }
 
 .card-header {
@@ -178,9 +182,9 @@ iframe {
   background: transparent;
 }
 
-.frame-wrap-overview,
-.frame-wrap-overview iframe {
-  min-height: 86vh;
+.frame-wrap-history,
+.frame-wrap-history iframe {
+  min-height: 62vh;
 }
 
 @media (max-width: 1180px) {
@@ -188,14 +192,19 @@ iframe {
     grid-template-columns: 1fr;
   }
 
+  .frame-card-main,
+  .frame-card-history {
+    grid-column: 1 / -1;
+  }
+
   .frame-wrap,
   iframe {
     min-height: 60vh;
   }
 
-  .frame-wrap-overview,
-  .frame-wrap-overview iframe {
-    min-height: 70vh;
+  .frame-wrap-history,
+  .frame-wrap-history iframe {
+    min-height: 58vh;
   }
 }
 
@@ -223,8 +232,8 @@ iframe {
     min-height: 52vh;
   }
 
-  .frame-wrap-overview,
-  .frame-wrap-overview iframe {
-    min-height: 62vh;
+  .frame-wrap-history,
+  .frame-wrap-history iframe {
+    min-height: 52vh;
   }
 }
