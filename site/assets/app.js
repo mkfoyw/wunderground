@@ -203,7 +203,7 @@ const CITY_CONFIG = sortCitiesByTimeZone([
     history: "https://www.wunderground.com/history/daily/cn/wuhan/ZHHH",
   },
   {
-    id: "mexico_city",
+    id: "mexico-city",
     name: "Mexico",
     timeZone: "America/Mexico_City",
     buttonMeta: "MX / MMMX",
