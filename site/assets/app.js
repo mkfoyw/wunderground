@@ -246,7 +246,7 @@ const CITY_CONFIG = sortCitiesByTimeZone([
   } // Warsaw
   ,
   {
-    id: "panama_city",
+    id: "panama-city",
     name: "Panama",
     timeZone: "America/Panama",
     buttonMeta: "PA / MPMG",
