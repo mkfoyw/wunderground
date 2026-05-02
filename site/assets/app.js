@@ -450,6 +450,7 @@ const overviewFrame = document.querySelector("#overview-frame");
 const hourlyCardLink = document.querySelector("#hourly-card-link");
 const overviewCardLink = document.querySelector("#overview-card-link");
 const historyCards = [...document.querySelectorAll("[data-history-offset]")];
+const forecastCards = [...document.querySelectorAll("[data-forecast-offset]")];
 
 let cityButtons = [];
 let activeCityId = null;
@@ -504,7 +505,9 @@ function getCityDateParts(city, offsetDays = 0, referenceDate = new Date()) {
 }
 
 function formatHistoryDate(dateParts) {
-  return `${dateParts.year}-${dateParts.month}-${dateParts.day}`;
+  const month = String(dateParts.month).padStart(2, "0");
+  const day = String(dateParts.day).padStart(2, "0");
+  return `${dateParts.year}-${month}-${day}`;
 }
 
 function buildHistoryUrl(city, offsetDays) {
@@ -514,6 +517,12 @@ function buildHistoryUrl(city, offsetDays) {
 
   return `${city.history.replace(/\/$/, "")}/date/${formatHistoryDate(
     getCityDateParts(city, offsetDays)
+  )}`;
+}
+
+function buildForecastUrl(city, offsetDays) {
+  return `${city.hourly.replace(/\/$/, "")}/date/${formatHistoryDate(
+    getCityDateParts(city, -offsetDays)
   )}`;
 }
 
@@ -533,6 +542,22 @@ function updateHistoryCards(city) {
   });
 }
 
+function updateForecastCards(city) {
+  forecastCards.forEach((card) => {
+    const offsetDays = Number(card.dataset.forecastOffset);
+    const dateText = formatHistoryDate(getCityDateParts(city, -offsetDays));
+    const forecastUrl = buildForecastUrl(city, offsetDays);
+    const title = card.querySelector(".forecast-title");
+    const frame = card.querySelector(".forecast-frame");
+    const link = card.querySelector(".forecast-card-link");
+
+    title.textContent = `Forecast · ${dateText}`;
+    frame.title = `Weather Underground Forecast ${dateText}`;
+    frame.src = forecastUrl;
+    link.href = forecastUrl;
+  });
+}
+
 function setCity(cityId) {
   const city = CITY_BY_ID[cityId];
   if (!city) {
@@ -543,6 +568,7 @@ function setCity(cityId) {
   overviewFrame.src = city.overview;
   hourlyFrame.src = city.hourly;
   updateHistoryCards(city);
+  updateForecastCards(city);
 
   overviewCardLink.href = city.overview;
   hourlyCardLink.href = city.hourly;

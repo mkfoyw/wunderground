@@ -159,6 +159,10 @@ a {
   grid-column: span 3;
 }
 
+.frame-card-forecast {
+  grid-column: span 3;
+}
+
 .frame-card-history {
   grid-column: span 2;
 }
