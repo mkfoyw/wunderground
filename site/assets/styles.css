@@ -196,6 +196,11 @@ iframe {
   min-height: 62vh;
 }
 
+.frame-wrap-forecast,
+.frame-wrap-forecast iframe {
+  min-height: 90vh;
+}
+
 .frame-wrap-history {
   --history-frame-offset: 180px;
   height: 62vh;
