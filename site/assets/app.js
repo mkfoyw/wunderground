@@ -203,6 +203,16 @@ const CITY_CONFIG = sortCitiesByTimeZone([
     history: "https://www.wunderground.com/history/daily/cn/shenzhen/ZGSZ",
   },
   {
+    id: "qingdao",
+    name: "Qingdao",
+    timeZone: "Asia/Shanghai",
+    buttonMeta: "CN / ZSQD",
+    description: "中国青岛 · ZSQD",
+    overview: "https://www.wunderground.com/weather/cn/qingdao/ZSQD",
+    hourly: "https://www.wunderground.com/hourly/cn/qingdao/ZSQD",
+    history: "https://www.wunderground.com/history/daily/cn/qingdao/ZSQD",
+  },
+  {
     id: "lagos",
     name: "Lagos",
     timeZone: "Africa/Lagos",
