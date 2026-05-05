@@ -103,6 +103,36 @@ const CITY_CONFIG = sortCitiesByTimeZone([
     history: "https://www.wunderground.com/history/daily/us/fl/miami/KMIA",
   },
   {
+    id: "new-york",
+    name: "New York",
+    timeZone: "America/New_York",
+    buttonMeta: "US / KLGA",
+    description: "美国纽约 · KLGA",
+    overview: "https://www.wunderground.com/weather/us/ny/new-york-city/KLGA",
+    hourly: "https://www.wunderground.com/hourly/us/ny/new-york-city/KLGA",
+    history: "https://www.wunderground.com/history/daily/us/ny/new-york-city/KLGA",
+  },
+  {
+    id: "atlanta",
+    name: "Atlanta",
+    timeZone: "America/New_York",
+    buttonMeta: "US / KATL",
+    description: "美国亚特兰大 · KATL",
+    overview: "https://www.wunderground.com/weather/us/ga/atlanta/KATL",
+    hourly: "https://www.wunderground.com/hourly/us/ga/atlanta/KATL",
+    history: "https://www.wunderground.com/history/daily/us/ga/atlanta/KATL",
+  },
+  {
+    id: "austin",
+    name: "Austin",
+    timeZone: "America/Chicago",
+    buttonMeta: "US / KAUS",
+    description: "美国奥斯汀 · KAUS",
+    overview: "https://www.wunderground.com/weather/us/tx/austin/KAUS",
+    hourly: "https://www.wunderground.com/hourly/us/tx/austin/KAUS",
+    history: "https://www.wunderground.com/history/daily/us/tx/austin/KAUS",
+  },
+  {
     id: "milan",
     name: "Milan",
     timeZone: "Europe/Rome",
@@ -299,6 +329,39 @@ const CITY_CONFIG = sortCitiesByTimeZone([
     hourly: "https://www.wunderground.com/hourly/ca/mississauga/CYYZ",
     history: "https://www.wunderground.com/history/daily/ca/mississauga/CYYZ"
   } // Mississauga
+  ,
+  {
+    id: "dallas",
+    name: "Dallas",
+    timeZone: "America/Chicago",
+    buttonMeta: "US / KDAL",
+    description: "美国达拉斯 · KDAL",
+    overview: "https://www.wunderground.com/weather/us/tx/dallas/KDAL",
+    hourly: "https://www.wunderground.com/hourly/us/tx/dallas/KDAL",
+    history: "https://www.wunderground.com/history/daily/us/tx/dallas/KDAL"
+  } // Dallas
+  ,
+  {
+    id: "seatac",
+    name: "Seattle-Tacoma",
+    timeZone: "America/Los_Angeles",
+    buttonMeta: "US / KSEA",
+    description: "美国西雅图-塔科马 · KSEA",
+    overview: "https://www.wunderground.com/weather/us/wa/seatac/KSEA",
+    hourly: "https://www.wunderground.com/hourly/us/wa/seatac/KSEA",
+    history: "https://www.wunderground.com/history/daily/us/wa/seatac/KSEA"
+  } // SeaTac
+  ,
+  {
+    id: "houston",
+    name: "Houston",
+    timeZone: "America/Chicago",
+    buttonMeta: "US / KHOU",
+    description: "美国休斯顿 · KHOU",
+    overview: "https://www.wunderground.com/weather/us/tx/houston/KHOU",
+    hourly: "https://www.wunderground.com/hourly/us/tx/houston/KHOU",
+    history: "https://www.wunderground.com/history/daily/us/tx/houston/KHOU"
+  } // Houston
   ,
   {
     id: "karachi",
